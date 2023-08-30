@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="header-title">Weather App</h2>
+      <div id="search-form" action="#">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Enter a city"
+          id="city"
+          name="city"
+        />
+        <button class="search-button">
+          <img src="icons/icons8-search-50.png" alt="search-icon" />
+        </button>
+      </div>
+      <div class="unit-box">
+        <button class="c-button active">°C, km/h</button>
+        <button class="f-button">°F, mph</button>
+      </div>
+    </header>
+    <main>
+      <div class="country-name"></div>
+      <div class="local-date"></div>
+      <div class="weather-wrap">
+        <img class="weather-img" src="" alt="weather-icon" />
+        <div class="temp"></div>
+      </div>
+      <div class="weather-desc"></div>
+      <div class="feels-like"></div>
+      <div class="details">
+        <div class="detail-box">
+          <p class="detail-name">Wind</p>
+          <p class="det wind"></p>
+        </div>
+        <div class="detail-box">
+          <p class="detail-name">Humidity</p>
+          <p class="det humidity"></p>
+        </div>
+        <div class="detail-box">
+          <p class="detail-name">Visibility</p>
+          <p class="det visibility"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

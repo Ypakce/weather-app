@@ -1,0 +1,144 @@
+:root {
+  --blue: #184f77;
+  --light-blue: #178bad;
+  --dark-blue: #0e2d44;
+  --white: #ffffff;
+  --transparent-white: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  color: var(--white);
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to bottom, var(--light-blue), var(--blue));
+}
+
+/*Header*/
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+.header-title {
+  font-size: 2rem;
+}
+
+#search-form {
+  display: flex;
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+  padding: 0.2rem 0.5rem;
+}
+
+#search-form:focus-within {
+  border: 2px solid var(--white);
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: var(--white);
+  padding: 0 0 0 10px;
+  font-weight: bold;
+}
+
+.search-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-button img {
+  height: 25px;
+}
+
+.unit-box {
+  justify-self: end;
+}
+
+.c-button,
+.f-button {
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+
+.active {
+  border: 2px solid var(--white);
+}
+
+/*Main*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.country-name {
+  font-size: 2.7rem;
+}
+
+.local-date,
+.feels-like {
+  font-size: 1.5rem;
+  color: var(--transparent-white);
+}
+
+.weather-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 4rem;
+}
+
+.weather-img {
+  height: 5rem;
+}
+
+.weather-desc {
+  font-size: 1.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 10px;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-name {
+  color: var(--transparent-white);
+  font-size: 1.1rem;
+}
+
+.det {
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
